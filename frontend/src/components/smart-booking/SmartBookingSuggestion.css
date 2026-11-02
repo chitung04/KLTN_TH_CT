@@ -1,0 +1,374 @@
+/* Smart Booking Suggestion Styles */
+.smart-booking-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.smart-booking-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.smart-booking-header h2 {
+  font-size: 2rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.smart-booking-header p {
+  color: #718096;
+  font-size: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #a0aec0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #f7fafc;
+  color: #4a5568;
+}
+
+/* Symptoms Input Section */
+.symptoms-input-section {
+  animation: fadeIn 0.5s ease;
+}
+
+.symptoms-input-section h3 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.symptoms-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.symptoms-textarea:focus {
+  outline: none;
+  border-color: #87CEEB;
+  box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.1);
+}
+
+.common-symptoms {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 12px;
+}
+
+.common-symptoms p {
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.symptom-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.symptom-tag {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: #4a5568;
+}
+
+.symptom-tag:hover {
+  background: #87CEEB;
+  border-color: #87CEEB;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-analyze {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-analyze:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.btn-analyze:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Suggestions Section */
+.suggestions-section {
+  animation: fadeIn 0.5s ease;
+}
+
+.suggestions-section h3 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.suggestions-section h4 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.urgency-alert {
+  background: linear-gradient(135deg, #fee 0%, #fdd 100%);
+  border-left: 4px solid #ef4444;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: #c53030;
+  font-weight: 600;
+}
+
+/* Department Suggestions */
+.dept-suggestions {
+  margin-bottom: 2rem;
+}
+
+.dept-card {
+  background: #f7fafc;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dept-card.recommended {
+  background: linear-gradient(135deg, #e6f7ff 0%, #d6f0ff 100%);
+  border-color: #87CEEB;
+  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.2);
+}
+
+.dept-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dept-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.dept-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.confidence-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.dept-reason {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.recommended-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Doctor Suggestions */
+.doctor-suggestions {
+  margin-bottom: 2rem;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  border-color: #87CEEB;
+  transform: translateX(5px);
+}
+
+.doctor-avatar {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.doctor-info strong {
+  display: block;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.doctor-info p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0.1rem 0;
+}
+
+/* Time Suggestion */
+.time-suggestion {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+  margin-bottom: 2rem;
+}
+
+.time-card p {
+  margin: 0.5rem 0;
+  color: #2d3748;
+}
+
+.time-reason {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #fed7aa;
+  color: #92400e;
+  font-style: italic;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-back,
+.btn-book {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-back {
+  background: white;
+  border: 2px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.btn-back:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.btn-book {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .smart-booking-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .smart-booking-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .symptom-tags {
+    gap: 0.25rem;
+  }
+
+  .symptom-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .doctor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
